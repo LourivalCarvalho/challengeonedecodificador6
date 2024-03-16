@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Criptografator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-image">
+        <img src="assets/matrix.gif" alt="Criptografator Codes Background" class="background-gif">
+    </div>
+    <div class="container">
+        <img src="assets/criptografator.png" alt="Criptografator" class="logo">
+        <h1 class="title1">Criptografator</h1>
+        <textarea id="inputText" placeholder="Digite a mensagem que deseja criptografar nessa caixa..." rows="7"></textarea>
+        <div class="buttons">
+            <button onclick="criptografar()" class="button">Criptografar Mensagem</button>
+            <button onclick="descriptografar()" class="button">Descriptografar Mensagem</button>
+        </div>
+        <h2 class="title2">Resultado</h2>
+        <textarea id="outputText" placeholder="O resultado da sua ação será exibido aqui..." rows="4" readonly></textarea>
+        <button onclick="copyText()" class="button">Copiar Texto</button>
+    </div>
+    <audio id="blipAudio" src="assets/blip.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
